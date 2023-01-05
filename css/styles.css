@@ -16,16 +16,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.accent {
-  color: var(--primary-brand-color);
+.header-logo {
+  color: var(--header-text-color);
 }
 .logo {
   font-family: Raleway, sans-serif;
+  text-decoration: none;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  color: var(--header-text-color);
+  color: var(--primary-brand-color);
 }
 
 /* links */
@@ -43,7 +44,7 @@ nav .link {
 }
 /* hero */
 .hero,
-.page-bottom {
+.footer-section {
   background-color: var(--header-text-color);
 }
 
@@ -54,14 +55,14 @@ nav .link {
   color: var(--main-background-color);
   text-align: center;
 }
-.button-primary {
-  font-weight: 500;
+.button.hero {
   letter-spacing: 0.04em;
   color: var(--main-background-color);
   background-color: var(--primary-brand-color);
 }
 /* sections */
-.section-header {
+.title,
+.portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -77,25 +78,30 @@ nav .link {
 }
 
 /* buttons */
-.button-secondary {
+.button {
   font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.button.portfolio {
   color: var(--primary-brand-color);
   background-color: var(--accent-color);
 }
-.button-secondary:hover,
-.button-secondary:focus {
+.button.portfolio:hover,
+.button.portfolio:focus {
   color: var(--main-background-color);
   background-color: var(--active-button-color);
 }
-.button-primary:hover,
-.button-primary:focus {
+.button.hero:hover,
+.button.hero:focus {
   background-color: var(--active-button-color);
 }
 /* footer */
 .footer-text {
   color: var(--accent-color);
 }
-.logo-footer {
+.footer-logo {
   color: var(--cloud-logo-color);
 }
 
